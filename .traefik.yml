@@ -8,7 +8,7 @@ type: middleware
 import: github.com/chahn/subfilter
 
 # A brief description of what your plugin is doing.
-summary: This middleware allows you to perform regular expression-based search and replace operations on both the body content and the headers of HTTP responses, with optional support for case-insensitive replacements.
+summary: This middleware modifies HTTP response bodies and headers according to user-defined regular expression (regex) patterns and replacements.
 
 # Configuration data for your plugin.
 # This is mandatory,
