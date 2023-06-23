@@ -1,0 +1,22 @@
+# The name of your plugin as displayed in the Plugins Catalog web UI.
+displayName: subfilter
+
+# For now, `middleware` is the only type available.
+type: middleware
+
+# The import path of your plugin.
+import: github.com/chahn/subfilter
+
+# A brief description of what your plugin is doing.
+summary: This middleware allows you to perform regular expression-based search and replace operations on both the body content and the headers of HTTP responses, with optional support for case-insensitive replacements.
+
+# Configuration data for your plugin.
+# This is mandatory,
+# and Plugins Catalog will try to execute the plugin with the data you provide as part of its startup validity tests.
+testData:
+  replacements:
+  - pattern: "Kiwi"
+    replacement: "Cherry"
+  - pattern: "apple(.)"
+    replacement: "banana?"
+    flags: "i"
